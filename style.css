@@ -77,6 +77,14 @@ body {
     width: 100%;
 }
 
+.header__container {
+    gap: 12px;
+}
+
+.cabecalho__menu__escrita {
+    font-size: 1.1rem;
+}
+
 .apresentacao__conteudo {
     width: 100%;
     display: flex;
@@ -311,11 +319,16 @@ body {
 .rodape{
     color: var(--cor--secundaria);
     background-color:#391b02;
-    padding: 10px;
+    padding: 20px 5%;
     text-align: center;
     font-family: var(--fonte--secundaria);
     font-size: 1rem;
     font-weight: 300;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    margin-left: -50vw;
+    
 }
 .rodape__link {
     text-decoration: none;
@@ -326,10 +339,10 @@ body {
 .rodape__link:hover {
     text-decoration: underline;
 }
+
 .rodape__texto {
     margin: 5px 0;
 }
-
 
 @media (max-width: 1200px) { /*responsividade para mobile*/
       .cabecalho {
