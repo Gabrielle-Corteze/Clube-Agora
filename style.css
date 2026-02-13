@@ -65,6 +65,8 @@ body {
     margin: 0;
 }
 
+
+
 .apresentacao {
     padding: 160px 10% 2% 10%;
     display: flex;
@@ -97,6 +99,7 @@ body {
     text-align: left; /* Mantém o texto alinhado à esquerda como você preferiu antes */
     width: 50%;
  }
+
 
 .apresentacao__conteudo__titulo {
     font-size: 2rem;
@@ -269,16 +272,6 @@ body {
     color: var(--cor--secundaria);
 }
 
-/* Ajuste para mobile */
-@media (max-width: 1200px) {
-    .cards__container {
-        flex-direction: column;
-        align-items: center;
-    }
-    .card {
-        width: 100%;
-    }
-}
 
 .cards__grid {
     display: grid;
@@ -312,12 +305,6 @@ body {
     line-height: 1.5;
 }
 
-/* Responsividade para telas menores */
-@media (max-width: 900px) {
-    .cards__grid {
-        grid-template-columns: 1fr; /* No celular, vira uma coluna só */
-    }
-}
 
 .rodape{
     color: var(--cor--secundaria);
@@ -340,10 +327,13 @@ body {
 
 
 @media (max-width: 1200px) { /*responsividade para mobile*/
-    .cabecalho {
-        padding: 40px 5%;
-        width: 100%;
-    }
+      .cabecalho {
+       padding: 16px 5%;
+   }
+
+   .cabecalho__logo {
+       width: 110px;
+   }
     .cabecalho__menu {
        display: grid;
         grid-template-columns: 1fr 1fr;
@@ -382,33 +372,42 @@ body {
     .apresentacao__links {
         order: 4;
     }
-
-}
-
-@media (max-width: 1200px) {
-    .cabecalho {
-        padding: 40px 5%;
-        width: 100vw; /* Garante faixa total no mobile */
-    
-}
-    .carrossel {
-        order: 2; /* Garante a ordem entre o título e o texto */
+     .cards__grid {
+        grid-template-columns: 1fr; /* No celular, vira uma coluna só */
+    }
+    .cards__container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
         width: 100%;
-        max-width: 450px; /* Impede que fique gigante */
-        margin: 20px auto;
     }
+    .apresentacao__links__navegacao {
+       width: 100%;
+       max-width: 320px;
+   }
+     .apresentacao__conteudo__titulo {
+       font-size: 1.6rem;
+   }
 
-    /* Ajuste do layout da apresentação para coluna */
-    .apresentacao {
-        display: grid;
-        grid-template-columns: 1fr;
-        padding: 5%;
-        text-align: center;
-        justify-items: center;
-    }
+   .apresentacao__conteudo__texto {
+       font-size: 1.1rem;
+       text-align: left;
+   }
+    .apresentacao__topo {
+      flex-direction: column;
+       text-align: center;
+       gap: 24px;
+   }
 
-    .apresentacao__conteudo { display: contents; }
-    .apresentacao__conteudo__titulo { order: 1; }
-    .apresentacao__conteudo__texto { order: 3; }
-    .apresentacao__links { order: 4; } 
-} 
+   .apresentacao__topo__texto {
+       width: 100%;
+       text-align: center;
+   }
+
+   .apresentacao__imagem {
+       width: 100%;
+       max-width: 350px;
+   }
+
+}
