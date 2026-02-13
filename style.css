@@ -65,7 +65,9 @@ body {
     margin: 0;
 }
 
-
+.bloco {
+   margin-bottom: 40px;
+}
 
 .apresentacao {
     padding: 160px 10% 2% 10%;
