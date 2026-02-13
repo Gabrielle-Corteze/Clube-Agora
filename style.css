@@ -326,6 +326,9 @@ body {
 .rodape__link:hover {
     text-decoration: underline;
 }
+.rodape__texto {
+    margin: 5px 0;
+}
 
 
 @media (max-width: 1200px) { /*responsividade para mobile*/
