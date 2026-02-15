@@ -322,17 +322,15 @@ body {
 
 
 .rodape{
-    color: var(--cor--secundaria);
-    background-color:#391b02;
-    padding: 20px 5%;
+   color: var(--cor--secundaria);
+    background-color: #391b02;
+    padding: 40px 20px; 
     text-align: center;
     font-family: var(--fonte--secundaria);
     font-size: 1rem;
     font-weight: 300;
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    margin-left: -50vw;
+    width: 100%; 
+    margin-top: 40px;
     
 }
 .rodape__link {
@@ -453,11 +451,13 @@ body {
        width: 100%;
        max-width: 350px;
    }
-   @media (max-width: 1200px) {
-    .apresentacao__venda {
-        flex-direction: column; /* No celular eles voltam a empilhar */
+   .rodape {
+        padding: 30px 10%;
+        font-size: 0.9rem; 
+    }
+   .apresentacao__venda {
+        flex-direction: column; 
         gap: 15px;
     }
-}
 
 }
