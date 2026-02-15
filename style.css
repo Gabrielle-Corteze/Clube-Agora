@@ -217,21 +217,18 @@ body {
     border-radius: 5%;
 }
 .apresentacao__destaque {
-    background-color: #391b02; /* Cor de fundo da faixa */
-    padding: 40px 10%; /* Espaçamento interno para o texto não encostar na borda da faixa */
-    width: 100vw; /* Faz a faixa ocupar a largura total da janela */
-   position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw; /* Truque para a faixa "sair" do container e ir de borda a borda */
-    margin-right: -50vw;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    color: var(--cor--secundaria);
+    width: 100% !important; 
+    left: auto !important;
+    right: auto !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    position: static !important; 
+    padding: 40px 10%;
+    box-sizing: border-box;
 }
 .apresentacao__imagens__duplas {
-    display: flex; /* Coloca os elementos um ao lado do outro */
-    justify-content: center; /* Centraliza o par de imagens na página */
+    display: flex; 
+    justify-content: center; 
     gap: 20px; 
     width: 100%;
     margin: 20px 0;
@@ -322,15 +319,19 @@ body {
 
 
 .rodape{
-   color: var(--cor--secundaria);
+  color: var(--cor--secundaria);
     background-color: #391b02;
-    padding: 40px 20px; 
+    padding: 2rem 1rem; 
     text-align: center;
     font-family: var(--fonte--secundaria);
     font-size: 1rem;
     font-weight: 300;
     width: 100%; 
-    margin-top: 40px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
     
 }
 .rodape__link {
@@ -452,8 +453,9 @@ body {
        max-width: 350px;
    }
    .rodape {
-        padding: 30px 10%;
-        font-size: 0.9rem; 
+        padding: 1.5rem 5%;
+        font-size: 0.85rem;
+        width: 100%;
     }
    .apresentacao__venda {
         flex-direction: column; 
