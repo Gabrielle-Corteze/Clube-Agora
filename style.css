@@ -178,17 +178,22 @@ body {
 
 .apresentacao__venda {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 20px 0;
+    padding: 15px 0;
     margin: 20px 0;
+    gap: 20px;          
+    flex-wrap: nowrap;
 }
 
 .apresentacao__venda__botao {
     background-color: #1a3c34; 
     color: var(--cor--secundaria);
-    padding: 20px 50px;
+    padding: 15px 30px;
+    font-size: 1.2rem;   /* Ajuste o tamanho da fonte se necessário */
+    white-space: nowrap;
     font-family: var(--fonte--secundaria);
     font-size: 1.8rem;
     font-weight: 700;
@@ -343,6 +348,10 @@ body {
 .rodape__texto {
     margin: 5px 0;
 }
+.riscado {
+  text-decoration: line-through;
+  display: inline;
+}
 
 @media (max-width: 1200px) { /*responsividade para mobile*/
       .cabecalho {
@@ -444,5 +453,11 @@ body {
        width: 100%;
        max-width: 350px;
    }
+   @media (max-width: 1200px) {
+    .apresentacao__venda {
+        flex-direction: column; /* No celular eles voltam a empilhar */
+        gap: 15px;
+    }
+}
 
 }
